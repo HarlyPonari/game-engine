@@ -20,9 +20,10 @@ set_property(TARGET "${CMAKE_PROJECT_NAME}" PROPERTY CXX_STANDARD 17)
 
 target_include_directories(${PROJECT_NAME} 
   PUBLIC ${CMAKE_SOURCE_DIR}/inc
-  PUBLIC ${CMAKE_SOURCE_DIR}/external/glfw/src
-  PUBLIC ${CMAKE_SOURCE_DIR}/external/glad/include
-  PUBLIC ${CMAKE_SOURCE_DIR}/external/glad/src
+  #PUBLIC ${CMAKE_SOURCE_DIR}/external/glfw/src
+  #PUBLIC ${CMAKE_SOURCE_DIR}/external/glad/include
+  #PUBLIC ${CMAKE_SOURCE_DIR}/external/glad/src
+  PUBLIC ${CMAKE_SOURCE_DIR}/external
 )
 
 target_sources(${PROJECT_NAME} PRIVATE ${MY_SOURCES})

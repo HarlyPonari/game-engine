@@ -4,8 +4,8 @@
 std::string get_file_contents(const char* filename)
 {
 
-  //std::filesystem::path p = std::filesystem::current_path();
-  //std::cout << "Current path is " << p << std::endl;
+  // std::filesystem::path p = std::filesystem::current_path();
+  // std::cout << "Current path is " << p << std::endl;
 
   std::ifstream in(filename, std::ios::binary);
   if (in)
